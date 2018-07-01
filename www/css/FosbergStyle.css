@@ -1,0 +1,200 @@
+.main {
+	perspective: 1px;
+	transform-style: preserve-3d;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.section {
+	position: relative;
+	height: 90vh;
+}
+.parallax_layer {
+	display: flex;
+	flex: 1 0 auto;
+	position: relative;
+	height: 100vh;
+	transform: translateZ(-0.9px) scale(1.90001);
+	
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-size: 100%;
+}
+
+#parallax1 {
+	z-index: -1;
+}
+
+#parallax2 {
+	z-index: -1;
+}
+
+#parallax3 {
+	z-index: -1;
+}
+.content_layer {
+	display: block;
+	position: relative;
+	z-index: 1;
+}
+
+.background_layerA {
+	width: 101%;
+	height: 99%;
+	background-image: url(http://i.imgur.com/AYlcYrz.gif);
+	background-size: cover;
+	margin-left: -0.5%;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	display: block;
+	position: absolute;
+}
+
+.background_layerB {
+	width: 101%;
+	height: 260px;
+	background-image: url(https://s-i.huffpost.com/gen/2916008/images/o-CALIFORNIA-NATIONAL-FOREST-facebook.jpg);
+	background-size: cover;
+	background-position: center;
+	margin-left: -0.5%;
+	margin-top:0;
+	padding-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	bottom: 0;
+	display: block;
+	position: absolute;
+}
+body, html{
+	margin: 0px;
+	padding: 0px;
+}
+
+#title {
+	padding-top: 180px;
+	padding-bottom: 20px;
+	text-align: center;
+	background-color: #ECF0F1;
+	height: 650px;
+	width: 300vh;
+	margin: 0px;
+}
+
+#heading {
+	font-size: 60px;
+	font-family: 'Quicksand';
+	font-weight: 500;
+	color: #DC5B21;
+	padding-bottom: 55px;
+}
+
+#heading2 {
+	font-size: 25px;
+	font-family: 'Quicksand';
+	color: #DC5B21;
+	font-weight: 300;
+}
+
+#logo {
+	height: 30%;
+}
+#mapDiv {
+	display: block;
+	height: 800px;
+	background-color: #E4DBBF;
+	margin-bottom: 0px;
+	padding-top: 85px;
+	border: 2px dashed white;
+}
+#map {
+	border: 4px solid #FBE8A6;
+	display: block;
+	height: 692px;
+	width: 92%;
+	margin: auto;
+}
+.info {
+	margin-top: 0px;
+	display: inline-block;
+	height: 400px;
+	position: relative;
+}
+
+#info_base {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+#info1 {
+	background-color: #DC5B21;
+	width: 880px;
+	margin-right: -5px;
+	padding-top: 17px;	
+	padding-left: 10px;
+	vertical-align: top;
+	border: 3px solid #DFDCE3;
+	border-right: 3px dashed #DFDCE3;
+}
+
+#info2 {
+	width: 598px;
+	height: 397px;
+	padding: 10px;
+	vertical-align: top;
+	background-color: #F7B733;
+	border: 3px solid #DFDCE3;
+	border-left: 3px dashed #DFDCE3;
+}
+
+
+#infoPara {
+	color: white;
+	font-family: Lato;
+	font-size: 20px;
+}
+
+#infoLink {
+	color: #B4DFE5;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: Lato;
+	text-decoration: underline;
+}
+
+#infoPara2 {
+	/*color: #6B7A8F;*/
+	color: white;
+	font-size: 25px;
+	font-family: Lato;
+}
+
+#sourcePara2 {
+	bottom: 5px;
+	right: 5px;
+	font-family: Lato;
+	font-size: 10px;
+	color: white;
+	text-align: right;
+	position: absolute;
+}
+
+.sourceLink {
+	color: #98074;
+	font-family: Lato;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#footer {
+	bottom: 0;
+	margin-bottom: 0px;
+	display: block;
+	height: 100px;
+	background-color:#DC5B21;
+}
+
