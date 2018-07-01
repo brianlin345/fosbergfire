@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type = "text/css" rel = "stylesheet" href = "css/FosbergStyle.css"/>
+		<link rel = "icon" href = "images/Fireicon.png">
+		<link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+		<title> Fosberg Fire Map </title>
+	</head>
+	<body>
+		<div class = "main">
+			<div class = "section parallax_layer" id = "parallax1">
+				<div id = "title">
+					<p id = "heading">
+						Fosberg Fire Map
+					</p> 
+						<img id = "logo" src = "images/Fireicon.svg"/>
+					<p id = "heading2">
+						A visualization of potential fire behavior <br>
+						across California from meteorological factors
+					</p>
+				</div>
+			</div>
+			<div class = "section content_layer">
+				<div id = "mapDiv">
+					<iframe id = "map" src = "map/test.html">  </iframe>
+				</div>
+			</div>
+			<div class = "section parallax_layer" id = "parallax2">
+				<div class = "background_layerA">
+				</div>
+			</div>
+			<div class = "section content_layer">
+				<div id = "info_base">
+					<div id = "info1" class = "info">
+						<p id = "infoPara"> 
+							This map was generated using the Fosberg Fire Index. <br>
+							It does not predict fires, but describes the behavior if a fire were to occur in a specific area. <br>
+							The Fosberg Fire Index is based on weather factors including temperature, humidity, and precipitation. <br> <br>
+							Data for this map is gathered online each hour by a Python script. <br>
+							The map itself is generated using Leaflet for R. <br>
+						<br>
+						<br>
+						Further information on the Fosberg Fire Index can be found 
+						<a href = "https://atmos.washington.edu/wrfrt/descript/definitions/fosbergindex.html" 
+						id = "infoLink" target = "_blank">
+							here.
+						</a>
+						</p>
+					</div>
+					<div id = "info2" class = "info">
+						<p id = "infoPara2">
+						In 2017 alone, wildfires burned 1,248,606 acres in California. <br> <br>
+						The Thomas Fire (December 2017) became the largest wildfire in California history, covering 281,893 acres. 
+						</p>
+						
+						<p id= "sourcePara2">
+						Sources: CALFire  
+							<a href = "http://cdfdata.fire.ca.gov/incidents/incidents_stats?year=2017" 
+							class = "sourceLink" target = "_blank">
+								2017 Statistics
+							</a>
+						, 
+							<a href = "http://www.fire.ca.gov/communications/downloads/fact_sheets/Top20_Acres.pdf" 
+							class = "sourceLink" target = "_blank">
+								Factsheet
+							</a>
+							<br>
+						</p>
+					</div>
+				</div>
+				<div class = "background_layerB">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
