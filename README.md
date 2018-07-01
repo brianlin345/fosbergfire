@@ -1,1 +1,1 @@
-# fosbergfire
+# Fosberg Fire Map code
